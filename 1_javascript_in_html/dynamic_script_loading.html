@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dynamic Script Loading</title>
+
+  <link rel="subresource" src="large_js_library.js">
+  
+</head>
+<body>
+  <h1>Loads of content to scroll</h1>
+
+  <script>
+
+    let script = document.createElement('script')
+    script.src = 'large_js_library.js'
+    script.async = false
+    document.head.appendChild(script)
+
+  </script>
+
+</body>
+</html>
