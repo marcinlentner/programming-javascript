@@ -1,38 +1,11 @@
-<html>
-  <head>
-    <!-- include external script from file in project -->
-    <script src="script.js"></script>
-
-    <!-- nclude external script but don't render block // don't wait for the -->
-    <!-- script to load before going to next line -->
-    <script src="script.js" async></script>
-
-    <!-- wait for the page to load completely before including a script -->
-    <script src="script.js" defer></script>
-
-    <!-- outgoing request will include credentials - CORS settings -->
-    <script
-      src="https://example.com/js/script.js"
-      crossorigin="use-credentials"
-    ></script>
-
-    <!-- SRI integrity - checks included script against cryptographic signature, -->
-    <!-- won't load if it fails -->
-    <script
-      src="http://example.com/js/script.js"
-      integrity="some_cryptography_code"
-    ></script>
-
-    <!-- type: "aplication/javascript", "aplication/exmascript", "module" // -->
-    <!-- "module" can be used for ES6 modueles, only then import, export can be used -->
-    <script src="es6script.js" type="module"></script>
-  </head>
-  <body>
-    <!-- Use script directly in file -->
-    <script>
-      function hello() {
-        console.log("Hello, World!");
-      }
-    </script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript in HTML</title>
+</head>
+<body>
+  <a href="tag_placement.html">Tag placement</a>
+</body>
 </html>
