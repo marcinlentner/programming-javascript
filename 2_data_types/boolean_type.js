@@ -1,11 +1,16 @@
-let boolean_val = false;
+let boolean_false = false;
+let boolean_true = true;
 
-if (boolean_val) {
+if (boolean_false) {
   // this block will not execute
 }
 
+if (boolean_true) {
+  // this block will execute
+}
+
 // any undeclared, null or undefined value is converted to falsy
-// let undeclared_value;
+//
 // if (undeclared_value) {
 //   // ERROR!
 //   // this block will not execute
