@@ -30,3 +30,19 @@ if (Zero == positiveZero) {
 if (Zero == negativeZero) {
   console.log("same");
 }
+
+/*
+ * Floating-Point
+ * Uses twice as much memory as integers
+ */
+let floatNum = 1.2;
+
+// valid but not recommended
+let floatNum2 = 0.2;
+
+// JavaScript will convert automatically floats to integers if possibe
+let floatNum3 = 12.0;
+
+// e-notation is used for very large numbers, e1 is multiply by 10 (10*1), e2 is multiply by 100 (10*2), etc.
+let floatNum4 = 1.2e1;
+// 12
