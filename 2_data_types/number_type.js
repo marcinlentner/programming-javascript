@@ -46,3 +46,20 @@ let floatNum3 = 12.0;
 // e-notation is used for very large numbers, e1 is multiply by 10 (10*1), e2 is multiply by 100 (10*2), etc.
 let floatNum4 = 1.2e1;
 // 12
+
+/*
+ * Floating-Point arythmetic operations ISSUES
+ */
+let a = 0.1;
+let b = 0.2;
+
+if (a + b == 0.3) {
+  // not executed
+} else {
+  console.log(a + b);
+  // 0.30000000000000004
+}
+
+/*
+ * NEVER TEST FOR SPECIFIC FLOATING-POINT VALUES
+ */
